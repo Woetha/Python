@@ -1,0 +1,23 @@
+1) # Program calculates the fee for club members based on age
+2) # 12 years or younger = €20
+3) # Between 12 years and 18 years = €50
+4) # Older than 18 = €95
+5) # If you are a member for 5 years or more you get a 10% discount
+6) 
+7) for i in range(4):
+8)     print("Information for member", i+1)
+9)     name = input("Name: ")
+10)     age = int(input("Age: "))
+11)     member = int(input("Member for how many years: "))
+12)     if age < 12:
+13)         fee = 20
+14)     else:
+15)         if 12 < age <= 18:
+16)             fee = 50
+17)         else:
+18)             if age > 18:
+19)                 fee = 95
+20)     if member >= 5:
+21)         fee /= 1.1
+22)     print("Member fee for", name, "=", int(fee))
+23)     print()
