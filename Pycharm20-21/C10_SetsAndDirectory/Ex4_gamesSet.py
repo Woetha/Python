@@ -29,10 +29,12 @@ type_both_set = type_textfile_set.intersection(type_xmlfile_set)
 # Prints
 print("In the text-file are", len(type_textfile_set), "types of games")
 print("In the XML-file are", len(type_xmlfile_set), "types of games", "\n")
+
 print("The types that occur in both files:")
 print(type_both_set, "\n")
+
 print("The types that occur in the text-file:")
 print(type_textfile_set, "\n")
+
 print("the types that occur in the XML-file:")
 print(type_xmlfile_set.difference(type_both_set))
-
