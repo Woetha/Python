@@ -2,8 +2,7 @@
 # Don't use 'for' or 'while'
 
 sentence = input("What did you eat for lunch: ")
-first_position = sentence.find("sandwich")
-print(sentence.find("sandwich")) # .find geeft '-1' als resultaat als het niet voorkomt
+first_position = sentence.find("sandwich")# .find geeft '-1' als resultaat als het niet voorkomt
 if first_position != -1:
     # Sandwich is 8 letters long
     # Find the second sandwich

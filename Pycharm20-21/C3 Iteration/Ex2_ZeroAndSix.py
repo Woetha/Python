@@ -6,13 +6,9 @@ last = number
 
 # i gaat elk getal appart af
 for i in str(number):
-    print(i)
     if int(i) == 6:
         sixes += 1
-    elif int(i) == 0:
+    if int(i) == 0:
         zeros += 1
 
 print("There are", str(zeros), "zeros and", str(sixes), "sixes")
-
-
-# NIET AF

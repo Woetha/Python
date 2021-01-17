@@ -9,21 +9,3 @@ if 4 not in numbers:
 else:
     numbers_after_four = (numbers[numbers.index(4) + 1:])# De posities na de #4
     print(numbers, "becomes", numbers_after_four)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #location = numbers[-1::-1].indext(4)
-    #new = numbers[location+1:]
-    #print(new)

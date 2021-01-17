@@ -1,18 +1,8 @@
-word = input("Enter a string: ")
-new_word = word
-print()
-previous_letter = ""
-next_letter = ""
-i = 0
-for i in range (len(word) - 1):
-    if word[i] == "*":
-        previous_letter = word[i - 1]
-        next_letter = word[i + 1]
-        word = word.replace("*", "")
-        word = word.replace(previous_letter, "")
-        word = word.replace(next_letter, "")
-    else:
-        print("")
+# Program removes * and the letter before and behind *
+# You may assume * doesn't appear on the first or last place
 
+word = input("Enter a string: ")
+while "*" in word:
+    place = word.find("*")  # find *
+    word = word.replace(word[place - 1:place + 2], "")  # removes * and the letter before and after (replace with blank)
 print(word)
-# werkt niet
